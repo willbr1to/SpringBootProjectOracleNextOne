@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.sql.SQLOutput;
+
 @SpringBootApplication
 public class ScreenmatchApplication implements CommandLineRunner {
 
@@ -25,5 +27,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		Deserializador deserializador = new Deserializador();
 		SeriesData seriesData = deserializador.deserializa(json, SeriesData.class);
 		System.out.println(seriesData);
+		System.out.println("CommitPushTest");
 	}
 }
