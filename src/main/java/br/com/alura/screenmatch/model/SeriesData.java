@@ -9,5 +9,5 @@ public record SeriesData(
         @JsonAlias("Genre") String genero,
         @JsonAlias("Year") String ano,
         @JsonAlias("imdbRating") String notaIMDB,
-        @JsonAlias("totalSeasons") String temporadas){
+        @JsonAlias("totalSeasons") Integer temporadas){
 }
